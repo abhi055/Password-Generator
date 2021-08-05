@@ -13,7 +13,7 @@ if __name__ == "__main__":
     # print(s4)
 
     # get length of password from user
-    plen = int(input("Enter password length\n"))
+    password_length = int(input("Enter password length\n"))
     s = []
     s.extend(list(s1))
     s.extend(list(s2))
@@ -22,11 +22,12 @@ if __name__ == "__main__":
     # print(s)
 
     # shuffle elemnt of list
-    random.shuffle(s)
-    # print(s)
+    # random.shuffle(s)
+    
 
     print("your password is : ")
-    print("".join(s[0:plen]))
+    print("".join(random.sample(s,password_length)))
+    # print("".join(s[0:plen]))
 
 
 
